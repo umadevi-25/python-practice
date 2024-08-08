@@ -1,0 +1,149 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMnHEfsRTTumZXBk6eYAKO+",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/umadevi-25/python-practice/blob/main/08/08/2024\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " Adding the natural numbers up to the given integer input using recursion"
+      ],
+      "metadata": {
+        "id": "DLd33lrepxbt"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IQO0viU6nGzP",
+        "outputId": "0d03aa37-685e-4aaa-e701-55dead73fea7"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the number:5\n",
+            "15\n"
+          ]
+        }
+      ],
+      "source": [
+        "def getsum(n):\n",
+        "  if n==1:\n",
+        "    return 1\n",
+        "  return n+getsum(n-1)\n",
+        "n=int(input(\"Enter the number:\"))\n",
+        "print(getsum(n))"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "To check whether the year is leap year or not"
+      ],
+      "metadata": {
+        "id": "beenz-bCrJ5v"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y=int(input(\"Enter the year:\"))\n",
+        "i (y%400==0) or (y%4==0 and y%100!=0):\n",
+        "  print(\"leap year\")\n",
+        "else:\n",
+        "  print(\"not a leap year\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eMcJJfm8saBD",
+        "outputId": "c81cc584-6bea-4ee4-c66a-ddb442cc7892"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the year:2023\n",
+            "not a leap year\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "To check whether number is prime or not"
+      ],
+      "metadata": {
+        "id": "jtp926ePuib8"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n=int(input(\"Enter the number:\"))\n",
+        "count=0\n",
+        "for i in range(2,n):\n",
+        "  if n%i==0:\n",
+        "    count=1\n",
+        "    break\n",
+        "if count==1:\n",
+        "    print(\"not a prime number\")\n",
+        "else:\n",
+        "    print(\"prime number\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3yzVfzupunPm",
+        "outputId": "d3e34225-fb5c-435c-a241-a4cd0005a820"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the number:6\n",
+            "not a prime number\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
